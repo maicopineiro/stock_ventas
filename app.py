@@ -21,7 +21,8 @@ st.markdown("""
         padding-right: 1rem;
     }
     </style>
-    """, unsafe_allow_html=True)*/
+    """, unsafe_allow_html=True)
+
 # Layout wide es clave para que use todo el ancho
 st.set_page_config(page_title="Stock RASA", page_icon="ico.ico", layout="wide")
 
@@ -121,6 +122,7 @@ if check_password():
                 use_container_width=True, 
                 hide_index=True
             )
+
 
 
 
