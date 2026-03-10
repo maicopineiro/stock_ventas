@@ -11,7 +11,17 @@ USUARIOS_PERMITIDOS = {
 }
 
 URL_GSHEETS = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQChb978H20pHIVMAwBBVGP4pJ99vWVLMLpsZOreAXg9dlSN5kUjrZ2s66_F2mi2Rq-BMviPqh8MVRX/pub?output=csv"
-
+# --- CSS Personalizado para maximizar el espacio ---
+st.markdown("""
+    <style>
+    .block-container {
+        padding-top: 1rem;
+        padding-bottom: 0rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    </style>
+    """, unsafe_allow_html=True)*/
 # Layout wide es clave para que use todo el ancho
 st.set_page_config(page_title="Stock RASA", page_icon="ico.ico", layout="wide")
 
@@ -111,5 +121,6 @@ if check_password():
                 use_container_width=True, 
                 hide_index=True
             )
+
 
 
