@@ -15,18 +15,6 @@ URL_GSHEETS = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQChb978H20pHIVMA
 # Layout wide es clave para que use todo el ancho
 st.set_page_config(page_title="Stock RASA", page_icon="ico.ico", layout="wide")
 
-# --- CSS Personalizado para maximizar el espacio ---
-st.markdown("""
-    <style>
-    .block-container {
-        padding-top: 1rem;
-        padding-bottom: 0rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-
 # --- Función de Autenticación ---
 def check_password():
     if "authenticated" not in st.session_state:
@@ -123,4 +111,5 @@ if check_password():
                 use_container_width=True, 
                 hide_index=True
             )
+
 
